@@ -1,15 +1,15 @@
 gitRepo: 
-  URL: dummy
+  URL: gitlab.gitlab-gitlab-system.apps.rosa.menat-tfc.k5n2.p3.openshiftapps.com
   targetRevision: HEAD
-baseDomain: dummy
+baseDomain: apps.rosa.menat-tfc.k5n2.p3.openshiftapps.com
 git:
-  organization: redhat-na-ssa
+  organization: RockStarDeveloperHub
 gitlab:
-  install: false
+  install: true
 rhsso:
-  install: false
+  install: true
 certmanager:
-  install: false
+  install: true
 helm:
   charts:
     gitlab:
