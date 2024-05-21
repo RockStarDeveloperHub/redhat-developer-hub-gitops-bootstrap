@@ -5,20 +5,18 @@ metadata:
   namespace: gitlab-system
 spec:
   chart:
-    version: 7.9.2
     values:
       certmanager-issuer:
-        email: rafaelcba@gmail.com
+        email: walid.shaari@gmail.com
       configureCertmanager:
         install: false
       global:
-        hosts:
-          domain: example.com # update with the cluster domain here.
+        hosts: {}
         ingress:
           annotations:
-            route.openshift.io/termination: edge
             kubernetes.io/tls-acme: true
+            route.openshift.io/termination: edge
           class: none
-          # configureCertmanager: true
       nginx-ingress:
         enabled: false
+    version: 8.0.0
