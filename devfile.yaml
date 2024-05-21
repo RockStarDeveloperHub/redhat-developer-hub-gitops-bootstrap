@@ -7,11 +7,10 @@ components:
       env:
         - name: K8S_AUTH_CONTEXT
           value: 'rhdh-admin' 
-      image: quay.io/devspaces/ansible-creator-ee@sha256:04c7aa48f34ab28dc21f36acfe472b249f29c24d1a52d98b2c8da75dd6587d79
+      image: quay.io/devspaces/ansible-creator-ee@sha256:a1d053d24f0b80438568bd4e06437900f0afe0ae29fcfa749bbace5cfff8c2ca
       memoryRequest: 256M
       memoryLimit: 1Gi
       cpuRequest: 250m
-      cpuLimit: 750m
       args: ['tail', '-f', '/dev/null']
 commands:
   - id: ansible-prereqs
