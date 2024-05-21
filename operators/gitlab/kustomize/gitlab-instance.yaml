@@ -11,7 +11,8 @@ spec:
       configureCertmanager:
         install: false
       global:
-        hosts: {}
+        hosts: 
+          domain: apps.rosa.gm-2405171644.5f06.p3.openshiftapps.com
         ingress:
           annotations:
             kubernetes.io/tls-acme: true
@@ -19,4 +20,4 @@ spec:
           class: none
       nginx-ingress:
         enabled: false
-    version: 8.0.0
+    version: 7.11.12
