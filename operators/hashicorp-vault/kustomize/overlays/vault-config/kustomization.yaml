@@ -7,7 +7,7 @@ patches:
   - patch: |-
       - op: replace
         path: /spec/applicationID
-        value: 898416 #replace by your Github Org Id here!!!
+        value: 900906 #replace by your Github Org Id here!!!
       - op: replace
         path: /spec/gitHubAPIBaseURL
         value: 'https://api.github.com/' #replace by your Github Enterprise API URL here (eg: https://[YOUR_HOST]/api/v3/)
