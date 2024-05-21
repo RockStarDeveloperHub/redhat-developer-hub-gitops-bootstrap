@@ -5,11 +5,13 @@ components:
   - name: tooling-container
     container:
       env:
-        - name: K8S_AUTH_CONTEXT
-          value: 'rhdh-admin' 
+        #- name: K8S_AUTH_CONTEXT
+        #  value: "rhdh-admin" 
+        - name: KUBEDOCK_ENABLED
+          value: "true"
       image: quay.io/devspaces/ansible-creator-ee@sha256:a1d053d24f0b80438568bd4e06437900f0afe0ae29fcfa749bbace5cfff8c2ca
       memoryRequest: 256M
-      memoryLimit: 1Gi
+      memoryLimit: 6Gi
       cpuRequest: 250m
       args: ['tail', '-f', '/dev/null']
 commands:
