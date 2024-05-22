@@ -12,7 +12,7 @@ spec:
         install: false
       global:
         hosts: 
-          domain: apps.rosa.gm-2405171644.5f06.p3.openshiftapps.com
+          domain: apps.rosa.gm-2405220602.1u4e.p3.openshiftapps.com 
         ingress:
           annotations:
             kubernetes.io/tls-acme: true

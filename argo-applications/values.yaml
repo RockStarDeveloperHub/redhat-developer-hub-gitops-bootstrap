@@ -1,7 +1,7 @@
 gitRepo: 
-  URL: gitlab-gitlab-system.apps.rosa.gm-2405171644.5f06.p3.openshiftapps.com
+  URL: gitlab-gitlab-system.apps.rosa.gm-2405220602.1u4e.p3.openshiftapps.com
   targetRevision: HEAD
-baseDomain: apps.rosa.gm-2405171644.5f06.p3.openshiftapps.com
+baseDomain: apps.rosa.gm-2405220602.1u4e.p3.openshiftapps.com 
 git:
   organization: RockStarDeveloperHub
 gitlab:

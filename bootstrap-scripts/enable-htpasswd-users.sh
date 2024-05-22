@@ -12,7 +12,7 @@ echo
 echo "creating admin and other 5 regular users..."
 #switch to this if you wanna a random pwd for the admin user!
 #readonly RANDOM_ADMIN_PWD=$(LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 13 ; echo)
-readonly RANDOM_ADMIN_PWD=openshift
+readonly RANDOM_ADMIN_PWD=ChangeME
 htpasswd -B -b -c ${SCRIPT_RELATIVE_DIR_PATH}/htpasswd-users admin $RANDOM_ADMIN_PWD
 htpasswd -B -b ${SCRIPT_RELATIVE_DIR_PATH}/htpasswd-users user1 openshift
 htpasswd -B -b ${SCRIPT_RELATIVE_DIR_PATH}/htpasswd-users user2 openshift

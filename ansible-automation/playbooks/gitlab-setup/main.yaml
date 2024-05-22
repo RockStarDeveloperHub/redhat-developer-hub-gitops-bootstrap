@@ -2,8 +2,8 @@
   hosts: localhost
   gather_facts: false
   vars:
-    idp_namespace: "rhdh"
-    idp_instance_name: "rhdh"
+    idp_namespace: "rhdh-demo"
+    idp_instance_name: "redhat-developer-hub"
     git_system: "gitlab"
     gitlab_instance_name: "gitlab"
     gitlab_root_secret_name: "{{ gitlab_instance_name }}-gitlab-initial-root-password"
@@ -11,7 +11,7 @@
     gitlab_host: ""
     vault_namespace: "vault"
     keycloak_host: ""
-    backstage_gitops_repo: "https://github.com/redhat-na-ssa/redhat-developer-hub-gitops-bootstrap.git"
+    backstage_gitops_repo: "https://github.com/RockStarDeveloperHub/redhat-developer-hub-gitops-bootstrap.git"
 
   tasks:
     - name: Retrieve Ingress config
@@ -41,7 +41,7 @@
         keycloak_host: "keycloak-{{
           idp_namespace }}.{{
           apps_cluster_domain }}"
-        backstage_host: "backstage-{{
+        backstage_host: "redhat-developer-hub-{{
           idp_namespace }}.{{
           apps_cluster_domain }}"
         devspaces_host: "devspaces.{{
