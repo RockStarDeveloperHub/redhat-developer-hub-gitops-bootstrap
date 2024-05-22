@@ -22,8 +22,8 @@ spec:
           targetRevision: HEAD
         git: 
           organization: RockStarDeveloperHub
-    directory:
-      recurse: false
+  #  directory:
+  #    recurse: false
   # Destination cluster and namespace to deploy the application
   destination:
     server: https://kubernetes.default.svc
