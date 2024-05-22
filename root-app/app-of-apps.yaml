@@ -23,7 +23,7 @@ spec:
         git: 
           organization: RockStarDeveloperHub
     directory:
-      recurse: true
+      recurse: false
   # Destination cluster and namespace to deploy the application
   destination:
     server: https://kubernetes.default.svc
